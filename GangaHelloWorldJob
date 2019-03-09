@@ -1,0 +1,37 @@
+#Running a Hello World job That Executes On The "Local" Backend #
+
+[02:31:00]
+Ganga In [2]: j=Job()
+
+[02:31:08]
+Ganga In [3]: j.submit()
+INFO     submitting job 7
+INFO     job 7 status changed to "submitting"
+INFO     Preparing Executable application.
+INFO     Created shared directory: conf-e43f3608-1ce2-4ef4-ad21-e2bb8a0e4706
+INFO     Preparing subjobs
+INFO     submitting job 7 to Local backend
+INFO     job 7 status changed to "submitted"
+Ganga Out [3]: 1
+[02:31:08]
+Ganga In [4]: INFO     job 7 status changed to "running"
+INFO     Job 7 Running PostProcessor hook
+INFO     job 7 status changed to "completed"
+[02:31:22]
+Ganga In [4]: jobs
+Ganga Out [4]:
+Registry Slice: jobs (8 objects)
+--------------
+    fqid |    status |      name | subjobs |    application |        backend |                             backend.actualCE |                       comment |  subjob status
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+       0 |       new |           |         |     Executable |      Localhost |                                              |                               |        0/0/0/0
+       1 |       new |           |         |     Executable |      Localhost |                                              |                               |        0/0/0/0
+       2 |       new |           |         |     Executable |      Localhost |                                              |                               |        0/0/0/0
+       3 |       new |           |         |     Executable |      Localhost |                                              |                               |        0/0/0/0
+       4 |       new |           |         |     Executable |      Localhost |                                              |                               |        0/0/0/0
+       5 |       new |           |         |     Executable |      Localhost |                                              |                               |        0/0/0/0
+       6 | completed |           |         |     Executable |      Localhost |                                  wireshark10 |                               |        0/0/0/0
+       7 | completed |           |         |     Executable |      Localhost |                                  wireshark10 |                               |        0/0/0/0
+       [02:37:40]
+       Ganga In [5]: jobs(0).peek('stdout','more')
+       Hello World

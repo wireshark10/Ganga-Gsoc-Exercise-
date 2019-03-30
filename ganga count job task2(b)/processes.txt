@@ -1,0 +1,93 @@
+[07:54:57]
+Ganga In [1]: j=Job()
+
+[07:55:26]
+Ganga In [2]: j.application=Executable()
+
+[07:55:52]
+Ganga In [3]: j.application.exe=File('task3')
+
+[07:56:01]
+Ganga In [4]: j.backend=Local()
+
+[07:56:07]
+Ganga In [5]: j.submit()
+INFO     submitting job 95
+INFO     job 95 status changed to "submitting"
+INFO     Preparing Executable application.
+INFO     Created shared directory: conf-4850db3e-9970-4957-a3fa-425e5480d432
+INFO     Preparing subjobs
+INFO     Submitting a prepared application; taking any input files from conf-4850db3e-9970-4957-a3fa-425e5480d432
+INFO     submitting job 95 to Local backend
+INFO     job 95 status changed to "submitted"
+Ganga Out [5]: 1
+
+[07:56:16]
+Ganga In [6]: j
+Ganga Out [6]: 
+ Job (
+   comment = ,
+   parallel_submit = True,
+   outputdir = /home/wireshark10/gangadir/workspace/wireshark10/LocalXML/95/output/,
+   id = 95,
+   status = submitted,
+   do_auto_resubmit = False,
+   name = ,
+   inputdir = /home/wireshark10/gangadir/workspace/wireshark10/LocalXML/95/input/,
+   outputsandbox = []  ,
+   inputfiles = []  ,
+   backend =    Local (
+     actualCE = wireshark10,
+     workdir = /tmp/tmp3lZMrK,
+     force_parallel = False,
+     nice = 0,
+     id = -1,
+     exitcode = None
+   ) ,
+   subjobs = Registry Slice: jobs(95).subjobs (0 objects)
+ ,
+   application =    Executable (
+     exe = File(name='task3',subdir='.'),
+     hash = 16acc65c4bdc3ab04e9027a0ece088f3,
+     env = {},
+     args = [Hello World]  ,
+     is_prepared = ShareDir(name='conf-4850db3e-9970-4957-a3fa-425e5480d432',subdir='.')
+   ) ,
+   inputdata =None,
+   metadata = {} ,
+   outputfiles = []  ,
+   postprocessors = [] ,
+   info =    JobInfo (
+     monitoring_links = []  ,
+     uuid = ,
+     submit_counter = 1,
+     monitor =None
+   ) ,
+   splitter =None,
+   inputsandbox = []  ,
+   outputdata =None,
+   time =    JobTime (
+     timestamps = 
+         Time (UTC)   Status
+- - - - - - - - - - - - - - - - - - - - - 
+2019/03/30 02:24:57 - new
+2019/03/30 02:26:07 - submitting
+2019/03/30 02:26:08 - submitted
+ 
+   ) 
+ )
+
+[07:56:22]
+Ganga In [7]: j.peek()
+total 3836
+-rwxr-xr-x 1 wireshark10 wireshark10 3918024 Mar 27 05:51 task3
+-rw-r--r-- 1 wireshark10 wireshark10       0 Mar 30 07:56 __syslog__
+-rw-r--r-- 1 wireshark10 wireshark10       0 Mar 30 07:56 stderr
+-rw-r--r-- 1 wireshark10 wireshark10       0 Mar 30 07:56 __GangaInputData.txt__
+-rw-r--r-- 1 wireshark10 wireshark10       8 Mar 30 07:56 stdout
+drwxr-xr-x 2 wireshark10 wireshark10    4096 Mar 30 07:56 _python
+
+[07:57:04]
+Ganga In [8]: j.peek('stdout','cat')
+the 264
+

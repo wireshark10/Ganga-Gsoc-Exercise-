@@ -13,4 +13,5 @@ Task 2 : Create a job in Ganga that demonstrates splitting a job into multiple p
         Related File : task2(a).py
         
         Task 2(b) : Create a job in Ganga that will count the number of occurances for a single page .
+        Related File : ganga count job task2(b)  
         

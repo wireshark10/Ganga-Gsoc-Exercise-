@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "task4.py", line 10, in <module>
-IOError: [Errno 2] No such file or directory: 'Cerntext8.txt'
-[26058] Failed to execute script task4

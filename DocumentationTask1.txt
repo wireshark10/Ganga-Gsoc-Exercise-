@@ -1,0 +1,20 @@
+DOCUMENTATION RELATED TO TASK 1 
+
+TASK 1 : 1. Installed Ganga by pip install ganga
+        
+          Run "Hello World" job on local backend:-
+               1.wrote a python script that prints hello world
+               2.converted it into an executable using pyinstaller.
+               3.wrote a job script and passed this executable as an application and submitted the job .
+               4.In gangadir folder as j. backend = Local() output file has hello world.
+
+TASK 2(a): Wrote python script by using PyPDF2 module,the  recieved CERN PDF file has been taken as an input and was finally splitted  .
+TASK 2(b): Wrote a python script that count the occurences of the word "the" in the text of the PDF file CERN PDF , and converted into an executable using pyinstaller, and finally passed as an application to ganga , recieved stdout file has a total.
+
+TASK 2(c): 1. Python script is written that counts the occurances of the word "the" in each of the page of the  PDF file.
+           2. Argsplitter is used and a job script is written that passes the file path as the arguments of the Argsplitter.
+           3. 12 stdout files obtained each having the output to a certain total of the occurance of the word "the" for each page.
+
+TASK 2(d)  1. merger script was written that sums up all the total of the each file and converted to an executable.
+           2. mergerjobscript was written that passes that executable as an application to ganga 
+           3. stdout file is obtained with a total of all the 12 stdout files .      

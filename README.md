@@ -18,3 +18,8 @@ Task 2 : Create a job in Ganga that demonstrates splitting a job into multiple p
         Task 2(c) : Using ArgSplitter create subjobs that each will count the occurences for a single page .
         Related File : ganga ArgSplitter job task2(c)  .   
         
+        
+        Task 2(d) :Create a merger that adds up the number extracted from each page and places the total number into a file.
+        Related File :ganga ganga mergerjob task2(d)  .  
+
+ 

@@ -1,0 +1,24 @@
+ganga jobscript.py
+
+*** Welcome to Ganga ***
+Version: 7.1.9
+Documentation and support: http://cern.ch/ganga
+Type help() or help('index') for online help.
+
+This is free software (GPL), and you are welcome to redistribute it
+under certain conditions; type license() for details.
+
+
+INFO     reading config file /home/wireshark10/.gangarc
+INFO     submitting job 173
+INFO     job 173 status changed to "submitting"
+INFO     Preparing Executable application.
+INFO     Created shared directory: conf-9d0bd464-ec45-490b-97e6-5fde521b328b
+INFO     Preparing subjobs
+INFO     Submitting a prepared application; taking any input files from conf-9d0bd464-ec45-490b-97e6-5fde521b328b
+INFO     submitting job 173 to Local backend
+INFO     job 173 status changed to "submitted"
+INFO     Stopping Job processing before shutting down Repositories
+INFO     Shutting Down Ganga Repositories
+INFO     Registry Shutdown
+
